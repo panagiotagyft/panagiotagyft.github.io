@@ -8,7 +8,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 function App() {
   return (
     <LanguageProvider>
-      <Router basename="/m126-1">
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/visualization" element={<Visualization />} />

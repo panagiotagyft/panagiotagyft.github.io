@@ -13,7 +13,7 @@ export default function Visualization() {
             <div className="visualization-container">
                 <span className='v-span'>{translations[language].dataVisualization}</span>
                 <div className="image-frame">
-                    <img src={`${process.env.PUBLIC_URL}/assets/combatant_deaths_in_conventional_wars_landscape.png`} alt="Data Visualization Example" />
+                    <img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7c6d1d59-eab0-44cf-88bc-1f04efbaf200/w=850" alt="Data Visualization Example" />
                 </div>
                 <p className="caption">{translations[language].sources}: 
                     <a href="https://ourworldindata.org/war-and-peace"> Source Website</a>
