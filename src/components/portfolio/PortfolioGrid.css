@@ -1,0 +1,49 @@
+.portfolio-item {
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-project-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.portfolio-description {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.skills-section {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.skills-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
