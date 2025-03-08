@@ -158,7 +158,7 @@ export default function Sources() {
               <animateTransform
                 attributeName="transform"
                 type="scale"
-                from="0.5"
+                from="1"
                 to="6"
                 begin="0s"
                 dur="30s"
