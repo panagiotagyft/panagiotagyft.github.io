@@ -158,7 +158,7 @@ export default function Sources() {
               <animateTransform
                 attributeName="transform"
                 type="scale"
-                from="1"
+                from="0.5"
                 to="6"
                 begin="0s"
                 dur="30s"
@@ -175,7 +175,9 @@ export default function Sources() {
           <ul>
             {translations[language].sourcesList.map((source, index) => (
               <li key={index}>
-                <a href={source.link} target="_blank" rel="noopener noreferrer">{source.name}</a>
+                <a href={source.link} target="_blank" rel="noopener noreferrer">
+                  {source.name}
+                </a> <strong>license:</strong> {source.license}
               </li>
             ))}
           </ul>
