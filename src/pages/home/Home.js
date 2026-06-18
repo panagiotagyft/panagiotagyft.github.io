@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect, useContext  } from 'react';
 import './Home.css';
 import Button from '@mui/material/Button';
-import { FaArrowUp, FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaArrowUp, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiOrcid } from 'react-icons/si'; 
 import PortfolioGrid from '../../components/portfolio/PortfolioGrid';
 import NavigationBar from '../../components/navbar/NavigationBar';
 import SkillsGrid from '../../components/skills/SkillsGrid';
@@ -38,19 +39,21 @@ export default function Home() {
                     <a href='https://github.com/panagiotagyft' target='_blank' rel='noreferrer'>
                         <FaGithub size={24} />
                     </a>
-                    <a href='https://www.facebook.com/profile.php?id=100048932058640&sk=about&locale=el_GR' target='_blank' rel='noreferrer'>
-                        <FaFacebook size={24} />
-                    </a>
                     <a href='https://www.linkedin.com/in/panagiota-gyftou-17a882237/' target='_blank' rel='noreferrer'>
                         <FaLinkedin size={24} />
+                    </a>
+                    <a href='https://orcid.org/0009-0005-0620-8894' target='_blank' rel='noreferrer'>
+                        <SiOrcid size={24} />
                     </a>
                 </div>
 
                 <div className='home-left'>
                     <h1>{translations[language].name}</h1>
                     <h3>{translations[language].jobTitle}</h3>
-                    <div className="text-container">{translations[language].descriptionParagraphs.map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>))}
+                    <div className="text-container">
+                        {translations[language].descriptionParagraphs.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
                     </div>
                     <div className='btn-group'>
                         <Button variant="contained" onClick={() => skillsRef.current.scrollIntoView({ behavior: 'smooth' })}>

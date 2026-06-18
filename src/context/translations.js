@@ -2,8 +2,7 @@
 const translations = {
   en: {
     aboutMe: "ABOUT ME",
-    visualization: "VISUALIZATION",
-    sources_title: "SOURCES",
+    publications_title: "PUBLICATIONS",
     mySkills: "My Skills",
     myPinnedProjects: "My Pinned Projects",
     name: "I'm Panagiota Gyftou",
@@ -15,29 +14,40 @@ const translations = {
     ],
     skillsButton: "Skills",
     portfolioButton: "My Portfolio",
-    dataVisualization: "Data-Driven Visualization",
-    visualizationDescription: [
-      "This visualization is particularly interesting as it presents complex data in an immediately comprehensible manner. It leverages various visualization techniques to highlight trends and the severity of wars over time, spanning from 1800 to 2011. The title Combatant deaths in conventional wars, 1800–2011 clarifies that the graph focuses exclusively on combatant losses, excluding civilian deaths, which often significantly increase the total casualty count.",  
-      "One of the elements that make it stand out is the use of circle size to represent the number of casualties. Larger circles correspond to higher losses, allowing the viewer to instantly identify the most devastating conflicts, such as the World Wars. This approach facilitates an intuitive understanding of the scale of events without requiring the reading of exact figures.",  
-      "The chronological arrangement along the horizontal axis enables the tracking of warfare activity over time, while the clear distinction between interstate and civil wars helps differentiate conflict types. Additionally, the inclusion of a range in casualty estimates ensures transparency and realistically conveys the uncertainty often associated with historical data.",  
-      "Overall, this visualization stands out for its clarity, accuracy, and effective use of color and space, offering a narrative-driven approach that enhances the comprehension of information."
+    datapublications: "Publications", 
+    publicationsList: [
+      {
+        year: 2026,
+        citations: [
+          {
+            text: "Gyftou, P., Blackwell, R.E., Koubarakis, M., and Cohn, A.G., 2026. A Cross-Linguistic Evaluation of Cardinal Direction Reasoning in LLMs. Conference on Spatial Information Theory (COSIT 2026) — To Appear",
+            // links: [
+            //   { label: "Preprint", url: "https://arxiv.org/abs/...your-paper-id..." },
+            //   { label: "Code", url: "https://github.com/your-username/your-repo" }
+            // ]
+          },
+          // {
+          //   text: "paper 2",
+          //   links: [
+          //     { label: "Preprint", url: "https://arxiv.org/abs/...your-paper-id..." },
+          //     { label: "Code", url: "https://github.com/your-username/your-repo" }
+          //   ]
+          // }
+        ]
+      },
+      // { year: 2025, citations: [          {
+      //       text: "Άλλο paper...",
+      //       links: [
+      //         { label: "Preprint", url: "https://arxiv.org/abs/...your-paper-id..." },
+      //         { label: "Code", url: "https://github.com/your-username/your-repo" }
+      //       ]
+      //     }] 
+      // }
     ],
-    sources: "Sources",
-    sourcesList: [
-      { "name": "React", "link": "https://react.dev/", "license": "MIT" },
-      { "name": "React Icons", "link": "https://react-icons.github.io/react-icons/", "license": "MIT" },
-      { "name": "Material UI", "link": "https://mui.com/", "license": "MIT" },
-      { "name": "React Bootstrap", "link": "https://react-bootstrap.github.io/", "license": "MIT" },
-      { "name": "React Router DOM", "link": "https://reactrouter.com/", "license": "MIT" }
-    ],
-    hoverText: "Hover: Shapes change color.",
-    clickText: "Left click: Hides the shape.",
-    rightClickText: "Right click: Pause/Resume the shapes.",
   },
   gr: {
     aboutMe: "ΣΧΕΤΙΚΑ ΜΕ ΕΜΕΝΑ",
-    visualization: "ΟΠΤΙΚΟΠΟΙΗΣΗ",
-    sources_title: "ΠΗΓΕΣ",
+    publications_title: "ΔΗΜΟΣΙΕΥΣΕΙΣ",
     mySkills: "Οι Δεξιότητές μου",
     myPinnedProjects: "Τα Προτεινόμενα Έργα μου",
     name: "Είμαι η Παναγιώτα Γύφτου",
@@ -49,24 +59,18 @@ const translations = {
     ],
     skillsButton: "ΔΕΞΙΟΤΗΤΕΣ",
     portfolioButton: "ΧΑΡΤΟΦΥΛΑΚΙΟ",
-    dataVisualization: "Οπτικοποίηση με Δεδομένα",
-    visualizationDescription: [
-      "Αυτή η οπτικοποίηση είναι ιδιαίτερα ενδιαφέρουσα, καθώς παρουσιάζει σύνθετα δεδομένα με τρόπο άμεσα κατανοητό. Αξιοποιεί διάφορες τεχνικές απεικόνισης για να αναδείξει τις τάσεις και τη σοβαρότητα των πολέμων διαχρονικά, από το 1800 έως το 2011. Ο τίτλος Combatant deaths in conventional wars, 1800–2011 αποσαφηνίζει ότι η γραφική παράσταση εστιάζει αποκλειστικά στις απώλειες μαχητών, αποκλείοντας τους θανάτους αμάχων, οι οποίοι συχνά αυξάνουν δραματικά τον συνολικό απολογισμό των θυμάτων.",
-      "Ένα από τα στοιχεία που την καθιστούν ξεχωριστή είναι η χρήση του μεγέθους των κύκλων για την αναπαράσταση του αριθμού των απωλειών.Οι μεγαλύτεροι κύκλοι αντιστοιχούν σε υψηλότερες απώλειες, επιτρέποντας στον αναγνώστη να εντοπίσει άμεσα τις πιο καταστροφικές συγκρούσεις, όπως οι Παγκόσμιοι Πόλεμοι.Αυτή η προσέγγιση διευκολύνει την κατανόηση της κλίμακας των γεγονότων χωρίς την ανάγκη ανάγνωσης ακριβών αριθμών.",
-      "Η χρονολογική διάταξη στον οριζόντιο άξονα επιτρέπει την παρακολούθηση της εξέλιξης της πολεμικής δραστηριότητας στον χρόνο, ενώ η σαφής διάκριση μεταξύ διακρατικών και εμφυλίων πολέμων βοηθά στη διαφοροποίηση των τύπων συγκρούσεων. Επιπλέον, η παροχή εύρους στις εκτιμήσεις των απωλειών εξασφαλίζει διαφάνεια και αποτυπώνει ρεαλιστικά την αβεβαιότητα που συχνά συνοδεύει τα ιστορικά δεδομένα.",
-      "Συνολικά, αυτή η οπτικοποίηση ξεχωρίζει για τη σαφήνεια, την ακρίβεια και την αποτελεσματική χρήση χρώματος και χώρου, προσφέροντας μια αφηγηματική προσέγγιση που διευκολύνει την κατανόηση των πληροφοριών.",
+    datapublications: "Δημοσιεύσεις", 
+    
+    publicationsList: [
+      {
+        year: 2026,
+        citations: [
+          {
+            text: "Gyftou, P., Blackwell, R.E., Koubarakis, M., and Cohn, A.G., 2026. A Cross-Linguistic Evaluation of Cardinal Direction Reasoning in LLMs. Conference on Spatial Information Theory (COSIT 2026) — To Appear",
+          },
+        ]
+      },
     ],
-    sources: "Πηγές",
-    sourcesList: [
-      { "name": "React", "link": "https://react.dev/", "license": "MIT" },
-      { "name": "React Icons", "link": "https://react-icons.github.io/react-icons/", "license": "MIT" },
-      { "name": "Material UI", "link": "https://mui.com/", "license": "MIT" },
-      { "name": "React Bootstrap", "link": "https://react-bootstrap.github.io/", "license": "MIT" },
-      { "name": "React Router DOM", "link": "https://reactrouter.com/", "license": "MIT" }
-    ],
-    hoverText: "Hover: Τα σχήματα αλλάζουν χρώμα.",
-    clickText: "Αριστερό κλικ: Κρύβει το σχήμα.",
-    rightClickText: "Δεξί κλικ: Παύση/Συνέχιση των σχημάτων.",
   }
 };
 

@@ -23,30 +23,38 @@
     gap: 40px;
 }
 
-.navbar-nav {
-    color: rgb(14, 13, 13) !important;
-    text-decoration: none;
-    padding-bottom: 5px;
-    position: relative;
-}
 .nav-link {
     color: rgb(14, 13, 13) !important;
     text-decoration: none;
     padding-bottom: 5px;
     position: relative;
+    font-size: 1.2rem; 
+    font-weight: 500;
 }
 
-.navbar-nav .nav-link::after {
+.nav-link::after {
     content: "";
     display: block;
     width: 0;
     height: 2px;
     background: rgb(29, 27, 27);
     transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.navbar-nav .nav-link:hover::after {
+.nav-link:hover::after {
     width: 100%;
+}
+
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.nav-link.active::after {
+    width: 100%; 
 }
 
 
@@ -58,6 +66,7 @@
     letter-spacing: 4px;
     transition: text-shadow 0.3s ease-in-out;
     margin-right: 90px;
+    color: rgb(14, 13, 13);
 }
 
 .special-link::after {
@@ -86,6 +95,7 @@
     .navbar-nav {
         flex-direction: column;
         text-align: center;
+        gap: 20px; 
     }
 }
 
@@ -102,12 +112,10 @@
 
 .flag-icon {
     width: 20px;
-    
     height: auto;
     transition: transform 0.2s ease-in-out;
 }
 
-/* Hover effect */
 .language-toggle:hover .flag-icon {
     transform: scale(1.1);
 }
