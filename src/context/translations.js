@@ -5,7 +5,7 @@ const translations = {
     publications_title: "PUBLICATIONS",
     mySkills: "My Skills",
     myPinnedProjects: "My Pinned Projects",
-    name: "I'm Panagiota Gyftou",
+    name: "Panagiota Gyftou",
     jobTitle: "HPC Users & Application Support Engineer",
     descriptionParagraphs: [
       "I hold a Bachelor's degree in Informatics and Telecommunications from the National and Kapodistrian University of Athens (NKUA) and I am currently pursuing a Master's degree in Informatics at the same department, specializing in Data, Information, and Knowledge Management.",
@@ -50,7 +50,7 @@ const translations = {
     publications_title: "ΔΗΜΟΣΙΕΥΣΕΙΣ",
     mySkills: "Οι Δεξιότητές μου",
     myPinnedProjects: "Τα Προτεινόμενα Έργα μου",
-    name: "Είμαι η Παναγιώτα Γύφτου",
+    name: "Παναγιώτα Γύφτου",
     jobTitle: "Μηχανικός Υποστήριξης Χρηστών HPC & Εφαρμογών",
     descriptionParagraphs: [
         "Είμαι απόφοιτη του Τμήματος Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ και συνεχίζω τις σπουδές μου στο ίδιο τμήμα, παρακολουθώντας το μεταπτυχιακό πρόγραμμα Πληροφορική με κατεύθυνση τη Διαχείριση Δεδομένων, Πληροφορίας και Γνώσης.",
